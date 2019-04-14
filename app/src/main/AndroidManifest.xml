@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rana.blooddonordiu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MessageNotification"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SignUpVerifyPhoneActivity"></activity>
+        <activity android:name=".SignInVerifyPhoneActivity" />
+        <activity android:name=".SignInWithPhoneActivity" />
+        <activity android:name=".ConversationActivity" />
+        <activity android:name=".MyPostsActivity" />
+        <activity android:name=".InformationActivity" />
+        <activity android:name=".UpdateProfileActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpWithPhoneActivity" />
+    </application>
+
+</manifest>

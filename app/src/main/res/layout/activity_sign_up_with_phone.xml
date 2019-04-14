@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_up_background"
+    android:orientation="vertical"
+    tools:context=".SignUpWithPhoneActivity">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/logoTV"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/fullNameET"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:background="@drawable/et_and_tv_layout2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/nickNameET"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:hint="Nick Name"
+                android:inputType="text"
+                android:background="@drawable/et_and_tv_layout2"
+                />
+
+            <TextView
+                android:id="@+id/birthDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="Pick Birthdate"
+                android:textAlignment="center"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/mobileNoET"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:inputType="number"
+            android:hint="Mobile Number"
+            android:background="@drawable/et_and_tv_layout2"
+            android:layout_marginTop="5dp"
+            android:maxLength="11"/>
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email (Optional)"
+            android:background="@drawable/et_and_tv_layout2"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <Spinner
+                android:id="@+id/areaSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/et_and_tv_layout2">
+
+            </Spinner>
+
+            <Spinner
+                android:layout_marginLeft="2dp"
+                android:id="@+id/bloodGroupSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/et_and_tv_layout2">
+
+            </Spinner>
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdBtnMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Male"/>
+            <RadioButton
+                android:id="@+id/rdBtnFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female"/>
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/interestedCheckBox"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Interested to donate blood" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/signUpBtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

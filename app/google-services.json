@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "672505694141",
+    "firebase_url": "https://blood-donor-diu.firebaseio.com",
+    "project_id": "blood-donor-diu",
+    "storage_bucket": "blood-donor-diu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672505694141:android:552fd47448f16243",
+        "android_client_info": {
+          "package_name": "com.example.rana.blooddonordiu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672505694141-c804goj1kjlsdlnqong8khk2t91t1f8c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rana.blooddonordiu",
+            "certificate_hash": "ae567e8ade65b71bc8ee9da13cbdae05425ce7e0"
+          }
+        },
+        {
+          "client_id": "672505694141-67ib7df5du5arbp5qsmcbdl83k29brjo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjULYOQH1Oom-A4Unui2B0WJ9TxxFBudk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672505694141-67ib7df5du5arbp5qsmcbdl83k29brjo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

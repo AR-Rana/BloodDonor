@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfileActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:orientation="horizontal"
+        android:background="@drawable/et_and_tv_layout2">
+
+        <ImageView
+            android:id="@+id/updateDpIV"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/chooseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose"/>
+        <Button
+            android:id="@+id/uploadBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload"/>
+    </LinearLayout>
+
+</LinearLayout>

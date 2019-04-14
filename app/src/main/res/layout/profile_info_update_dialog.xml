@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/udOptionTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option"
+        android:gravity="center"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/udTextET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"/>
+    <Spinner
+        android:id="@+id/udSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@drawable/et_and_tv_layout2">
+
+    </Spinner>
+    <CheckBox
+        android:id="@+id/udInterestedCheckBox"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Interested to donate blood" />
+    <RadioGroup
+        android:id="@+id/udGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/udRdBtnMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male"/>
+        <RadioButton
+            android:id="@+id/udRdBtnFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female"/>
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/udUpdateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/udCancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

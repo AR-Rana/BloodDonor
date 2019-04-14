@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/nav_back"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/personPhoto"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_person_black_24dp"/>
+    <TextView
+        android:id="@+id/personNameTV"
+        android:layout_below="@id/personPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Name"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"/>
+    <TextView
+        android:id="@+id/personEmailTV"
+        android:layout_below="@id/personNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yourmail@domain.com"
+        android:textSize="15sp"
+        android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>

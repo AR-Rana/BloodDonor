@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/publicPostViewParentLayout"
+    android:padding="10dp"
+    android:background="@drawable/et_and_tv_layout2">
+
+
+
+    <TextView
+        android:id="@+id/publicPostUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColorHint="#000"/>
+    <TextView
+        android:id="@+id/publicPostUserPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/publicPostUserName"
+        android:text="Post"
+        android:textSize="15sp"/>
+    <ImageView
+        android:id="@+id/publicPostUserImage"
+        android:layout_below="@+id/publicPostUserPost"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+
+</RelativeLayout>

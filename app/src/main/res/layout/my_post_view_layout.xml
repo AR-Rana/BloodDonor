@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/myPostViewParentLayout"
+    android:padding="10dp"
+    android:background="@drawable/et_and_tv_layout2">
+
+
+    <LinearLayout
+        android:id="@+id/mPostButtonLayout"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/myPostEditButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:background="@drawable/et_and_tv_layout2"/>
+        <ImageButton
+            android:id="@+id/myPostDeleteButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:background="@drawable/et_and_tv_layout2"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/myPostUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mPostButtonLayout"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColorHint="#000"/>
+    <TextView
+        android:id="@+id/myPostUserPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myPostUserName"
+        android:text="Post"
+        android:textSize="15sp"/>
+    <ImageView
+        android:id="@+id/myPostUserImage"
+        android:layout_below="@+id/myPostUserPost"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+
+</RelativeLayout>

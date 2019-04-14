@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignInWithPhoneActivity"
+    android:background="@drawable/sign_in_background"
+    android:padding="40dp">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/button_layout"
+            >
+
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="+88"
+                android:textSize="17sp"
+                android:drawableLeft="@drawable/ic_phone_black_24dp" />
+
+            <EditText
+                android:id="@+id/editTextMobile"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="0123456789"
+                android:hint="Enter mobile number"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:layout_marginRight="15dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/signInContinueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Continue"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:layout_gravity="end"
+            android:background="@drawable/button_layout"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/signInSignUpTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_here"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

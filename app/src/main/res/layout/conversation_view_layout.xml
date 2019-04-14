@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/conversation_parent_layout">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="300dp"
+        android:background="@drawable/et_and_tv_layout2">
+        <TextView
+            android:id="@+id/conversationRecMsgTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receive Message"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:textSize="17sp"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="300dp"
+        android:background="@drawable/et_and_tv_layout2"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/conversationSendMsgTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Message"
+            android:textColor="#000"
+            android:textAlignment="viewEnd"
+            android:textSize="17sp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
